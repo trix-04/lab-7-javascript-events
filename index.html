@@ -31,6 +31,19 @@
         <p id="formMessage"></p>
     </section>
 
+    <section id="focus-blur-events">
+        <h2>Focus & Blur Events</h2>
+        <label for="skyColor">The color of the sky is:</label>
+        <input type="text" id="skyInput" onfocus="handleFocus();">
+
+        <br>
+        <br>
+        <br>
+
+        <label for="ageInput">How old are you?</label>
+        <input type="text" id="ageInput" onblur="validateAge()">
+    </section>
+
     <script src ="script.js"></script>
 </body>
 </html>
