@@ -59,3 +59,18 @@
     font-style:italic;
 
 }
+
+.childButton{
+    border-radius:5px;
+    border: none;
+
+}
+
+.childButton:hover {
+    background-color: rgb(247, 153, 119);
+    border: 5px double rgb(239, 127, 86);
+}
+
+.childButton.nonButton:hover {
+    background-color: rgb(209, 182, 242);
+}

@@ -98,7 +98,7 @@ buttonContainer.addEventListener('click', (event) => {
                 message = "You clicked on Button 3! Here's some more dust 💨";
                 break;
             default:
-                message = "hey don't click that.";
+                message = "hey im not a button 😠.";
         }
 
         delegationMessage.textContent = message;
