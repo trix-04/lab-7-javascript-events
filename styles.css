@@ -22,3 +22,14 @@
 #hoverButton:hover {
     background-color: rgb(247, 153, 119);
 }
+
+#keyboardInput {
+    color: purple;
+    font:bold;
+    width: 170px;
+}
+
+#keyPressedMessage{
+    font-weight:bold;
+    color:purple;
+}
