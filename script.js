@@ -8,3 +8,11 @@ hoverButton.addEventListener('mouseenter', () => {
 hoverButton.addEventListener('mouseleave', () => {
     hoverMessage.textContent = "I need a nap 💤..";
 });
+
+
+let keyboardInput = document.getElementById('keyboardInput');
+let keyPressedMessage = document.getElementById('keyPressedMessage');
+
+keyboardInput.addEventListener('keydown', (event) => {
+    keyPressedMessage.textContent = `Latest key pressed: ${event.key}`;
+});
