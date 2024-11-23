@@ -37,3 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Input changed: ', this.value);
     });
 });
+
+function handleFocus() {
+    document.getElementById('skyInput').style.background = 'lightblue';
+}
+
+function validateAge() {
+    var age = document.getElementById('ageInput');
+    var ageValue = parseInt(age.value, 10);
+
+    
+    if (ageValue >= 18) {
+        age.style.backgroundColor = 'lightgreen';
+        console.log('Eligible age confirmed.');
+    } else {
+        age.style.backgroundColor = 'salmon'; 
+        console.log('Check age, may be under 18.');
+    }
+}
