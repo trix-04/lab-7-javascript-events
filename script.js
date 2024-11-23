@@ -55,3 +55,28 @@ function validateAge() {
         console.log('Check age, may be under 18.');
     }
 }
+
+let buttonContainer = document.getElementById('buttonContainer');
+let delegationMessage = document.getElementById('delegationMessage');
+
+buttonContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('childButton')) {
+        
+        let message = '';
+        switch (event.target.textContent) {
+            case 'Button 1':
+                message = "You clicked on Button 1! Take some dust 💨";
+                break;
+            case 'Button 2':
+                message = "You clicked on Button 2! Here's a dog 🐕";
+                break;
+            case 'Button 3':
+                message = "You clicked on Button 3! Here's some more dust 💨";
+                break;
+            default:
+                message = "hey don't click that.";
+        }
+
+        delegationMessage.textContent = message;
+    }
+});
