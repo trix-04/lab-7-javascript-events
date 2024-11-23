@@ -46,6 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function handleFocus() {
     document.getElementById('skyInput').style.background = 'lightblue';
 }
+function handleBlur() {
+    document.getElementById('skyInput').style.background = '';
+}
+document.getElementById('skyInput').addEventListener('blur', handleBlur);
+
 
 function validateAge() {
     var age = document.getElementById('ageInput');
