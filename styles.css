@@ -48,3 +48,14 @@
 #submitButton:hover{
     background-color:  rgb(247, 153, 119);
 }
+
+#skyInput{
+    border-radius: 30px 30px 30px 30px;
+    border:2px dashed darkcyan;
+    
+}
+
+#ageMessage{
+    font-style:italic;
+
+}
