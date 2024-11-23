@@ -43,45 +43,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function handleFocus() {
-    document.getElementById('skyInput').style.background = 'lightblue';
-}
-function handleBlur() {
-    document.getElementById('skyInput').style.background = '';
-}
-document.getElementById('skyInput').addEventListener('blur', handleBlur);
+let skyInput = document.getElementById('skyInput');
+let focusMessage = document.getElementById('focusMessage');
 
-
-function validateAge() {
-    var age = document.getElementById('ageInput');
-    var ageValue = parseInt(age.value, 10);
-    
-    if (ageValue >= 18) {
-        age.style.backgroundColor = 'lightgreen';
-        console.log('Eligible age confirmed.');
-    } else {
-        age.style.backgroundColor = 'salmon'; 
-        console.log('Check age, may be under 18.');
-    }
-}
-
-let ageInpput = document.getElementById('ageInput');
-let ageMessage = document.getElementById('ageMessage');
-
-ageInput.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-
-        event.preventDefault();
-       
-        let ageValue = parseInt(ageInput.value, 10);
-        if (ageValue >= 18) {
-            ageMessage.textContent = 'Eligible age confirmed.';
-        } else {
-            ageMessage.textContent = 'Check age eligibility, may be under 18.';
-        }
-    }
+skyInput.addEventListener('focus', () => {
+    skyInput.style.background = 'lightblue';
+    focusMessage.textContent = "What color is the textbox?";
 });
 
+skyInput.addEventListener('blur', () => {
+    skyInput.style.background = '';
+    focusMessage.textContent = "Click the textbox for a hint.";
+});
 
 
 
