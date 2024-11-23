@@ -33,3 +33,18 @@
     font-weight:bold;
     color:purple;
 }
+
+#formMessage{
+    font-style:italic;
+    color:purple;
+}
+
+#submitButton{
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#submitButton:hover{
+    background-color:  rgb(247, 153, 119);
+}
