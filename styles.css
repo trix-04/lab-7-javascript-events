@@ -13,3 +13,12 @@
     text-align:center;
 }
 
+#hoverButton{
+    border:none;
+    padding:5px;
+    border-radius: 2px;
+}
+
+#hoverButton:hover {
+    background-color: rgb(247, 153, 119);
+}
